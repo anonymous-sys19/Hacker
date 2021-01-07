@@ -1,0 +1,5 @@
+cd
+cd /data/data/com.termux/files/usr/
+cd anonimo
+cd Hacker
+bash main.sh

@@ -1,0 +1,5 @@
+cd
+cd /usr/
+cd anonimo
+cd Hacker
+bash main.sh
