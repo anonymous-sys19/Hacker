@@ -42,7 +42,7 @@ echo -e  " $cyan 07$fnc $rojo KawaiiDeauther$fnc"  "$azul Dale kill ah cualquier
 echo -e  " $cyan 08$fnc $rojo WiFi-Pumpkin$fnc"  "$azul Crea un doble wifi  con esta herramienta para tu victima. "
 echo -e  " $cyan 09$fnc $rojo Info$fnc"  "$azul obtiene informacion de sitios webs"
 echo -e  " $cyan 10$fnc $rojo ID-F-BOOK$fnc" "$azul Saca el ID de facebook de una victima mas facil y rapido"
-echo -e  " $cyan 00$fnc $click Atras $fn"
+echo -e  " $cyan 99$fnc $click Atras $fn"
 
 echo -e -n "  \e[32mIngrese un valor :> $fnc"
 read opcion
@@ -411,7 +411,6 @@ read enterkey
 ;;
 99)
 function Atras {
-clear
 bash main.sh
 }
 Atras
