@@ -53,11 +53,15 @@ if [ $user = 1 ]; then
         echo -e "$mor$negrita Requeriments listo/ Instalando nmap,sql $fnc"
         echo
         echo
-        echo -e "$verde Quiere instalar [wpscan/namp/sqlmap/etc [y/n]$fnc"
+        echo -e "$verde Quiere instalar [wpscan/nmap/sqlmap/etc [y/n]$fnc"
         read y
         if [ $y = y ]; then
 
                 echo -e "$rojo Instalando sql $fnc"
+                echo
+                echo -e " Esta opcion sql no siempre instalara "
+                echo -e " Recomiendo instalar manual [pkg install sqlmap] "
+                echo
                 pkg install sqlmap
                 echo
                 echo -e " Instalando nmap"
