@@ -404,7 +404,7 @@ function ctrl_c() {
 cd ..
 cd output/url/
 function ID {
-    python ID-F-BOOK.py
+    python2 ID-F-BOOK.py
 }
 ID
 read enterkey
