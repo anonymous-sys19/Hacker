@@ -31,6 +31,9 @@ if [ $user = 1 ]; then
         pkg install python
         pkg install clang
         pkg install git
+        sleep 1s
+        pip install requests
+        clear
         cd run
         git clone https://github.com/zoelabbb/conio.h.git
         cd conio.h
@@ -41,6 +44,7 @@ if [ $user = 1 ]; then
         mv hacker /data/data/com.termux/files/usr/bin
         chmod 777 -R termux.sh
         bash termux.sh
+        clear
         echo
         echo
         echo -e "$amarillo ESPERE ... INSTALANDO DEPENDENCIAS TERMUX$fnc"
@@ -53,7 +57,7 @@ if [ $user = 1 ]; then
         echo -e "$mor$negrita Requeriments listo/ Instalando nmap,sql $fnc"
         echo
         echo
-        echo -e "$verde Quiere instalar [wpscan/nmap/sqlmap/etc [y/n]$fnc"
+        echo -e "$verde Quiere instalar [/nmap/sqlmap/etc [y/n]$fnc"
         read y
         if [ $y = y ]; then
 
