@@ -108,11 +108,12 @@ elif [ $user = 2 ]; then
         cd ..
         rm -r conio.h
         chmod 777 -R Hacker
-        mv Hacker /usr/bin/
+        mv Hacker Hacker-Upgrade /usr/bin/
         cd ..
         cd ..
         mkdir  /usr/anonimo
         mv Hacker /usr/anonimo/
         echo -e "$rojo    EJECUTA LA HERRAMIENTA ESCRIBIENDO Hacker$fnc"
+        echo -e "$rojo    Para actualizar $azul[ Hacker-Upgrade ]$fnc"
         exit 0
 fi
