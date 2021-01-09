@@ -162,7 +162,13 @@ elif [ $osing = 9 ]; then
     }
     Dracnmap
 elif [ $osing = 10 ]; then
-    function kalitorify {
+    echo
+    echo -e "$amarillo   [01]$cyan Kalitorify  $amarillo [02]$cyan visual_studio  $amarillo [03]$cyan Red_tor_64-bit$fnc "
+    echo
+    echo -e "$azul ELIGA SU OPCION ..$fnc"
+    echo
+    read -p "$ " opcion
+    if [ $opcion = 1 ]; then
         cd ..
         cd output
         echo
@@ -197,15 +203,48 @@ elif [ $osing = 10 ]; then
         echo -e "$click$amarillo Esta Funcion solo funciona si tienes los requerimentos $fn$fnc"
         exit 0
         fi
-    } 
-    kalitorify
-elif [ $osing = 99 ]; then
-    function atras {
-        cd ..
-        cd hack
-        bash main.sh
-    }
-    atras
+elif [ $opcion = 2 ]; then
+    echo -e "$amarillo Seguro que quiere descargar $rojo[y/n] $fnc"
+    echo
+    echo -e "$blanco Visual_estudio_code$fnc"
+    read -p "# " programa
+    echo
+    if [ $programa = y ]; then
+        cd
+        cd
+        wget https://az764295.vo.msecnd.net/stable/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/code_1.52.1-1608136922_amd64.deb
+        echo
+        echo -e " Se a Guardado en [root]"
+        echo
+        echo -e " [instalacion ][dpkg -i nombre del archivo  ] "
+        echo
+    elif [ $programa = n ]; then
+        clear
+        echo
+        echo -e "$cyan       //ADIOS UN GUSTO SOMOS EL MUNDO CODE // $fnc"
+        exit 0
+    fi
+elif [ $opcion = 3 ]; then
+    echo
+    echo -e "$blanco Seguro que quiere descargar$rojo [y/n] $fnc"
+    echo
+    echo -e "$rojo Web-Tor $fnc"
+    read -p "# " programa2
+    echo
+    if [ $programa2 = y ]; then
+        cd
+        cd
+        wget https://dist.torproject.org/torbrowser/10.0.7/tor-browser-linux64-10.0.7_en-US.tar.xz
+        echo
+        echo -e " Tu programa se guardo en [Root]  "
+        echo -e " [unzip nombre del programa]  "
+        echo -e " [Instala] [dpkg -i nombre del programa]  "
+    elif [ $programa2 = n ]; then
+        echo
+        echo -e "$cyan ADIOS del mundo anonimo  $fnc"
+        exit 0
+    fi
+fi
 elif [ $osing = 00 ]; then
 echo -e " SALIENDO .... "
 sleep 1s
