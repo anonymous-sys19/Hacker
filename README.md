@@ -20,3 +20,5 @@ user [anom]
 password [1234]
 
 NOTA: si es linux al introducir  la password presiona la tecla spacio
+
+Nota la opcion  upgrade.sh, esta en Desarrollo 
