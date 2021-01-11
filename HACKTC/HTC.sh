@@ -169,17 +169,18 @@ read enterkey
 ;;
 9)
 echo -e "Si usas [Termux  [y] [ linux [n]"
-read distri
-if [ $distr = y ]; then
+echo
+read distro
+if [ $distro = y ]; then
     apt update && apt upgrade -y
     pkg install python -y
     pkg install python2 -y
     pkg install w3m -y
     pkg install cmatrix -y
     pkg install bash -y
-elif [ $distr = n ]; then
+elif [ $distro = n ]; then
     apt-get install w3m -y
-    sleep 0.50
+    sleep 0.50s
     apt-get install cmatrix
 fi
 function checknerd {
@@ -188,7 +189,7 @@ function checknerd {
     git clone https://github.com/FearFraiming/CheckNerd.git
     chmod 777 -R CheckNerd
     cd CheckNerd
-    python2 
+    python2 checknerd.py
 }
 checknerd
 read enterkey
