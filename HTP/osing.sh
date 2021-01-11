@@ -163,7 +163,7 @@ elif [ $osing = 9 ]; then
     Dracnmap
 elif [ $osing = 10 ]; then
     echo
-    echo -e "$amarillo   [01]$cyan Kalitorify  $amarillo [02]$cyan visual_studio  $amarillo [03]$cyan Red_tor_64-bit$fnc "
+    echo -e "$amarillo   [01]$cyan Kalitorify  $amarillo [02]$cyan visual_studio  $amarillo [03]$cyan Red_tor_64-bit     $amarillo [04]$cyan NordVPN$fnc  "
     echo
     echo -e "$azul ELIGA SU OPCION ..$fnc"
     echo
@@ -244,6 +244,13 @@ elif [ $opcion = 3 ]; then
         echo -e "$cyan ADIOS del mundo anonimo  $fnc"
         exit 0
     fi
+elif [ $ = 5 ]; then
+    cd ..
+    cd output
+    echo
+    echo -e " instalando NordVPN .."
+    sleep 1s
+    sh <(wget -qO - https://downloads.nordcdn.com/apps/linux/install.sh)
 fi
 elif [ $osing = 00 ]; then
 echo -e " SALIENDO .... "
