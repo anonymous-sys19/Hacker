@@ -244,7 +244,7 @@ elif [ $opcion = 3 ]; then
         echo -e "$cyan ADIOS del mundo anonimo  $fnc"
         exit 0
     fi
-elif [ $ = 5 ]; then
+elif [ $ = 4 ]; then
     cd ..
     cd output
     echo
